@@ -8,7 +8,6 @@ class DirectorsController < ApplicationController
   end
 
   def new_form
-    @director = Director.new
   end
 
   def create_row

@@ -8,7 +8,6 @@ class MoviesController < ApplicationController
   end
 
   def new_form
-    @movie = Movie.new
   end
 
   def create_row
