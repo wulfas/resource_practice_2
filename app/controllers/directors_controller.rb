@@ -1,6 +1,6 @@
 class DirectorsController < ApplicationController
   def index
-    @directors = Director.all
+    directors = Director.all
   end
 
   def show
@@ -11,7 +11,6 @@ class DirectorsController < ApplicationController
   end
 
   def create_row
-    @director = Director.new
     @director.dob = params[:dob]
     @director.name = params[:name]
     @director.bio = params[:bio]
@@ -41,7 +40,5 @@ class DirectorsController < ApplicationController
 
   def destroy
     @director = Director.find(params[:id])
-
-    @director.destroy
   end
 end
