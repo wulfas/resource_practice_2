@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'kaminari'
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
